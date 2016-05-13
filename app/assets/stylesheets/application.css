@@ -1,0 +1,83 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require bootstrap
+ */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  background-color:#ecf0f1;
+}
+
+.doormatino-color{
+	color: white;
+	background: teal;
+}
+
+.rectangle{
+  position:absolute;
+  margin-top:12px;
+  margin-left:1px;
+  width:400px;
+  height:350px;
+  background:#c2c2a3;
+  font-size: 20px
+}
+
+.rectangle2{
+  width:430px;
+  height:380px;
+  background:#2e2e1f;
+}
+
+.tv{
+  position:relative;
+  width:300px;
+  height:250px;
+  margin:20px 0;
+  background:black;
+  border-radius: 50% / 10%;
+  color:#00ff00;
+  text-align:center;
+  text-indent: .1em;
+  font-family:consolas;
+}
+.tv:before{
+  content:'';
+  position:absolute;
+  top:10%;
+  bottom:10%;
+  right: -5%;
+  left: -5%;
+  background:inherit;
+  border-radius:5% / 50%;
+}
+
+.btn-primary{
+  color: #fff;
+  background: maroon;
+  border-color: #2e2e1f;
+  font-family:consolas;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: teal;
+  border-color: #204d74;
+}

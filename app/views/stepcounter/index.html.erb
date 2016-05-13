@@ -1,0 +1,20 @@
+<div class="container-fluid doormatino-color">
+	<center>
+		<h1 style="display:inline-block; font-family:consolas; font-size: 60px;">doormatino:</h1>
+		<p style="display:inline-block; font-family:consolas; font-size: 30px">THE SMART DOORMAT<p>
+	</center>
+</div>
+</br>
+</br>
+<center>
+	<div class="container-fluid rectangle2">
+		<div class="container-fluid rectangle">
+			<div class="container-fluid tv">
+				</br>
+				<h3 style="font-family:consolas">CURRENT COUNT:</h3>
+				<p style="font-size:100px;" id="myp"><%= @var.value %></p>
+			</div>
+			<%= button_to "RESET", action: "reset" %>
+		</div>
+	</div>
+</center>
